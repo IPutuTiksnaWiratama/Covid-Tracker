@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
-import { data_global, data_indo, data_provinsi } from './component'
+import { data_global, data_indo, data_provinsi } from './halaman'
 
 const App = () => {
   return(
