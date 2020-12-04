@@ -19,19 +19,19 @@ const CardGlobal = () => {
         <>
             <tr>
                 <th>
-                    <h1>
-                        <p>Jumlah Kasus</p>
+                    <h1 className = "card1">
+                        <p>Positif</p>
                         <NumberFormat value={jumlahKasus} thousandSeparator={true} displayType={'text'}/>
                     </h1>
                 </th>
                 <th>
-                    <h1>
+                    <h1 className = "card2">
                         <p>Sembuh</p>
                         <NumberFormat value={sembuh} thousandSeparator={true} displayType={'text'}/>
                     </h1>
                 </th>
                 <th>
-                    <h1>
+                    <h1 className = "card3">
                         <p>Meninggal</p>
                         <NumberFormat value={meninggal} thousandSeparator={true} displayType={'text'}/>
                     </h1>
