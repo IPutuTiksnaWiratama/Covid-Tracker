@@ -1,13 +1,13 @@
 import React from 'react'
 
-const data_indo = () => {
+const Data_indo = () => {
     return (
         <div>
-            <h1>
-                Data Indonesia
+           <h1>
+               Data Indonesia
             </h1>
         </div>
     )
 }
 
-export default data_indo;
+export default Data_indo;

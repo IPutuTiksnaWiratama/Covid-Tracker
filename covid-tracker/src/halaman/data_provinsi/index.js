@@ -1,13 +1,13 @@
 import React from 'react'
 
-const data_provinsi = () => {
+const Data_provinsi = () => {
     return (
         <div>
            <h1>
                Data Provinsi
-            </h1> 
+            </h1>
         </div>
     )
 }
 
-export default data_provinsi;
+export default Data_provinsi;

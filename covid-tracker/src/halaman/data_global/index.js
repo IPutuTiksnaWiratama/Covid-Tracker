@@ -1,13 +1,15 @@
 import React from 'react'
+import CardGlobal from './CardGlobal'
 
-const data_global = () => {
-    return (
+const Data_global = () => {
+    return(
         <div>
-            <h1>
-                Data Global
+           <h1>
+               Data Global
             </h1>
+            <CardGlobal/>
         </div>
-    )
-}
+    );
+};
 
-export default data_global;
+export default Data_global;

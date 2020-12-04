@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
-import { data_global, data_indo, data_provinsi } from './halaman'
+import { Data_global, Data_indo, Data_provinsi } from './halaman'
 
 const App = () => {
   return(
@@ -34,13 +34,13 @@ const App = () => {
       </div>
       <Switch>
         <Route path="/data_global">
-          
+          <Data_global/>
         </Route>
         <Route path="/data_indo">
-
+          <Data_indo/>
         </Route>
         <Route path="/data_provinsi">
-
+          <Data_provinsi/>
         </Route>
       </Switch>
     </Router>
