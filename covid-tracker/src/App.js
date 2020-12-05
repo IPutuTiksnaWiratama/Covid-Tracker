@@ -7,6 +7,7 @@ const App = () => {
   return(
     <Router>
       <div>
+        <center>
         <h1>
           Covid-19 Tracker
         </h1>
@@ -31,6 +32,7 @@ const App = () => {
             </ul>
           </table>
         </nav>
+        </center>
       </div>
       <Switch>
         <Route path="/data_global">
