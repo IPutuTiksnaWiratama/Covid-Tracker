@@ -1,4 +1,7 @@
 import React from 'react'
+import TabProv from "./TabProv"
+import '../../App.css'
+
 
 const Data_provinsi = () => {
     return (
@@ -6,6 +9,7 @@ const Data_provinsi = () => {
            <h1>
                Data Provinsi
             </h1>
+            <TabProv/>
         </div>
     )
 }
