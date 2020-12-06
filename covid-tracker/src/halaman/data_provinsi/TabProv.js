@@ -1,5 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import axios from "axios"
+import { Table } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import NumberFormat from "react-number-format";
 
 const TabProv = () => {
@@ -12,29 +14,33 @@ const TabProv = () => {
     })  
  }, []);
     console.log(DataProvinsi);
-  return(
+  return( 
     <center>
-    <table border="1" className = "tulisan">
-                <tr>
-                    <th>No</th>
-                    <th>Provinsi</th>
-                    <th>Jumlah Kasus</th>
-                    <th>Sembuh</th>
-                    <th>Meninggal</th>
-                </tr>
-                    {DataProvinsi.map((item, index) => {
-                    return(
-                        <tr>
-                            <th scope="row" key={item.fid}>{index + 1}</th>
-                            <th>{item.provinsi}</th>
-                            <th><NumberFormat value={item.kasusPosi} thousandSeparator={true} displayType={'text'}/></th>
-                            <th><NumberFormat value={item.kasusSemb} thousandSeparator={true} displayType={'text'}/></th>
-                            <th><NumberFormat value={item.kasusMeni} thousandSeparator={true} displayType={'text'}/></th>
-                        </tr>
-                        )
-                })}
-    </table>
-    </center>
+      <Table striped bordered hover>
+    <thead style={{ textAlign: 'center', backgroundColor: '#858585' }}>
+      <tr>
+        <th>No</th>
+        <th>Provinsi</th>
+        <th>Jumlah Kasus</th>
+        <th>Sembuh</th>
+        <th>Meninggal</th>
+      </tr>
+    </thead>
+    <tbody style={{ textAlign: 'center' }}>
+      {DataProvinsi.map((item, index) => {
+                  return(
+                      <tr>
+                          <th scope="row" key={item.fid}>{index + 1}</th>
+                          <th>{item.provinsi}</th>
+                          <th><NumberFormat value={item.kasusPosi} thousandSeparator={true} displayType={'text'}/></th>
+                          <th><NumberFormat value={item.kasusSemb} thousandSeparator={true} displayType={'text'}/></th>
+                          <th><NumberFormat value={item.kasusMeni} thousandSeparator={true} displayType={'text'}/></th>
+                       </tr>
+                  )
+        })}
+    </tbody>
+  </Table>
+  </center>
   );
 }
 
