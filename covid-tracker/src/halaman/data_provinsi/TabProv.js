@@ -16,7 +16,7 @@ const TabProv = () => {
     console.log(DataProvinsi);
   return( 
     <center>
-      <Table striped bordered hover>
+      <Table striped bordered hover className = "mt-5">
     <thead style={{ textAlign: 'center', backgroundColor: '#858585' }}>
       <tr>
         <th>No</th>

@@ -7,9 +7,6 @@ const Data_provinsi = () => {
     return (
         <div>
             <center>
-           <h1>
-               Data Provinsi
-            </h1>
             <TabProv/>
             </center>
         </div>

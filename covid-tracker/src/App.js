@@ -1,51 +1,54 @@
 import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
-import { Data_global, Data_indo, Data_provinsi } from './halaman'
+import { Data_global as Global, Data_indo as Indo, Data_provinsi as Provinsi } from "./halaman"
+import { Container, Button } from 'react-bootstrap'
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const App = () => {
   return(
+    <center>
+    <Container>
     <Router>
       <div>
-        <center>
-        <h1>
+        <h1 className = "tulisan2, mt-5">
           Covid-19 Tracker
         </h1>
         <nav>
           <table>
-            <ul>
-              <li>
-                <Link to="/data_global">
+            <Button variant = "outline-secondary ml-3 mt-2">
+              <Link to="/data_global">
                   Data Global
-                </Link>
-              </li>
-              <li>
-                <Link to="/data_indo">
+              </Link>
+            </Button>
+            <Button variant = "outline-secondary ml-1 mt-2">
+              <Link to="/data_indo">
                   Data Indonesia
-                </Link>
-              </li>
-              <li>
-                <Link to="/data_provinsi">
+              </Link>
+            </Button>
+            <Button variant = "outline-secondary ml-1 mt-2">
+              <Link to="/data_provinsi">
                   Data Provinsi
-                </Link>
-              </li>
-            </ul>
+              </Link>
+            </Button>
           </table>
         </nav>
-        </center>
       </div>
       <Switch>
         <Route path="/data_global">
-          <Data_global/>
+          <Global/>
         </Route>
         <Route path="/data_indo">
-          <Data_indo/>
+          <Indo/>
         </Route>
         <Route path="/data_provinsi">
-          <Data_provinsi/>
+          <Provinsi/>
         </Route>
       </Switch>
     </Router>
+    </Container>
+    </center>
   )
 }
 

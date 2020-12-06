@@ -1,52 +1,11 @@
-.card1{
-  font-size: 25px  ;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  margin: 2px;
-  padding: 12px;
-  border-radius: 10px;
-  border-width: px;
-  border-color: black;
-  border-style: solid;
-  font-weight: bold;
-  background-color:rgb(247, 177, 47);
-}
-
-.card2{
-  font-size: 25px ;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  margin: 2px;
-  padding: 12px;
-  border-radius: 10px;
-  border-width: px;
-  border-color: black;
-  border-style: solid;
-  font-weight: bold;
-  background-color:rgb(111, 255, 44);
-}
-
-.card3{
-  font-size: 25px  ;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  margin: 2px;
-  padding: 12px;
-  border-radius: 10px;
-  border-width: px;
-  border-color: black;
-  border-style: solid;
-  font-weight: bold;
-  background-color:rgb(248, 36, 36);
-}
-
 .tulisan{
   text-align: center;
 }
 
 .tengah{
   margin-left: 12px;
+}
+
+.tulisan2{
+  margin-left: 8px;
 }
