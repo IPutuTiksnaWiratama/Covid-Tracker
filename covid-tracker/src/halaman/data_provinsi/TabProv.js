@@ -13,6 +13,7 @@ const TabProv = () => {
  }, []);
     console.log(DataProvinsi);
   return(
+    <center>
     <table border="1" className = "tulisan">
                 <tr>
                     <th>No</th>
@@ -33,6 +34,7 @@ const TabProv = () => {
                         )
                 })}
     </table>
+    </center>
   );
 }
 

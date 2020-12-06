@@ -18,8 +18,8 @@ const CardGlobal = () => {
     })  
  }, []);
   return(
-        <>
-        <div className = "tengah">
+        <div>
+            <center>
             <tr>
                 <th>
                 <Card className = "ml-3" style={{
@@ -61,8 +61,8 @@ const CardGlobal = () => {
                 </Card>
                 </th>
             </tr>
-            </div>
-        </>
+            </center>
+        </div>
   ); 
 };
 
